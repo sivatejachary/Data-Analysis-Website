@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Columns</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Select X and Y Axes for Plotting</h2>
+        <form action="/plot" method="post">
+            <label for="x_axis">X Axis:</label>
+            <select name="x_axis" multiple size="4" id="x_axis">
+                {% for column in columns %}
+                <option value="{{ column }}">{{ column }}</option>
+                {% endfor %}
+            </select>
+
+            <label for="y_axis">Y Axis:</label>
+            <select name="y_axis" multiple size="4" id="y_axis" onchange="generateColorPickers()">
+                {% for column in columns %}
+                <option value="{{ column }}">{{ column }}</option>
+                {% endfor %}
+            </select>
+
+            <label for="chart_type">Chart Type:</label>
+            <select name="chart_type">
+                <option value="bar">Bar Chart</option>
+                <option value="line">Line Chart</option>
+                <option value="scatter">Scatter Plot</option>
+                <option value="pie">Pie Chart</option>
+            </select>
+
+            <div id="colorPickersContainer">
+                <label>Choose Colors for Each Y-Axis Column:</label>
+                <!-- Color pickers will be dynamically added here -->
+            </div>
+            
+            <input type="submit" value="Generate Plot" class="btn">
+        </form>
+    </div>
+
+    <script>
+        // Function to generate color pickers for each selected Y-axis column
+        function generateColorPickers() {
+            const yAxisSelect = document.getElementById('y_axis');
+            const colorContainer = document.getElementById('colorPickersContainer');
+            colorContainer.innerHTML = '';  // Clear previous color pickers
+
+            // Add color pickers for each selected option in Y-axis
+            for (let option of yAxisSelect.selectedOptions) {
+                const colorLabel = document.createElement('label');
+                colorLabel.innerText = `Color for ${option.value}: `;
+                
+                const colorInput = document.createElement('input');
+                colorInput.type = 'color';
+                colorInput.name = 'colors';
+                colorInput.value = '#ff5733';  // Default color, can be changed
+
+                colorContainer.appendChild(colorLabel);
+                colorContainer.appendChild(colorInput);
+                colorContainer.appendChild(document.createElement('br'));
+            }
+        }
+    </script>
+</body>
+</html>
