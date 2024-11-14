@@ -52,7 +52,7 @@ Provide a guide on how to use the tool:
 6. Screenshots
     ## Screenshots
 
-## Webpage Preview
+## Data Analysis Page
 
 ![image](https://github.com/sivatejachary/Data-Analysis-Website/blob/5b93eb78ec6ba0f7c1e531c19c3431787b0e4508/Screenshot%20(263).png)
 
