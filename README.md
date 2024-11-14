@@ -52,6 +52,6 @@ Provide a guide on how to use the tool:
 6. Screenshots
     ## Screenshots
 
-![Main Interface](path/to/screenshot.png)
+![Main Interface](https://github.com/sivatejachary/Data-Analysis-Website/blob/main/Screenshot%20(263).png)
 
 
