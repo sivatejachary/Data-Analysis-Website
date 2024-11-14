@@ -52,6 +52,8 @@ Provide a guide on how to use the tool:
 6. Screenshots
     ## Screenshots
 
-![Main Interface](https://github.com/sivatejachary/Data-Analysis-Website/blob/main/Screenshot%20(263).png)
+## Webpage Preview
+
+![image](https://github.com/sivatejachary/Plants_disease_detection_using-_Falask/blob/9d4e7af6d452734d25830de034cc11d1f342a91e/Screenshot%20(218).png)
 
 
