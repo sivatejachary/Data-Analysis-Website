@@ -35,12 +35,12 @@ python app.py
 
 5. Access the website at http://localhost:5000.
    
-### 5. Usage
+
 
 Provide a guide on how to use the tool:
 
 
-```markdown
+
 ## Usage
 
 1. Upload a CSV file.
