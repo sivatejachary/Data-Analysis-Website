@@ -39,6 +39,7 @@ python app.py
 
 Provide a guide on how to use the tool:
 
+
 ```markdown
 ## Usage
 
@@ -46,9 +47,9 @@ Provide a guide on how to use the tool:
 2. Select the columns for the X and Y axes.
 3. Choose your preferred chart type (Bar, Line, Scatter, Pie).
 4. Customize the colors for each data series using the color picker.
-5. Click "Generate Chart" to view the visualized data.
+5. Click "Generate Chart" to view the visualized data. 
 
-6. 6. Screenshots
+6. Screenshots
     ## Screenshots
 
 ![Main Interface](path/to/screenshot.png)
