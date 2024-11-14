@@ -54,6 +54,6 @@ Provide a guide on how to use the tool:
 
 ## Webpage Preview
 
-![image](https://github.com/sivatejachary/Plants_disease_detection_using-_Falask/blob/9d4e7af6d452734d25830de034cc11d1f342a91e/Screenshot%20(218).png)
+![image](https://github.com/sivatejachary/Data-Analysis-Website/blob/5b93eb78ec6ba0f7c1e531c19c3431787b0e4508/Screenshot%20(263).png)
 
 
